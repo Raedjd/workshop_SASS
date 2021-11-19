@@ -1,0 +1,38 @@
+
+    
+$secondary-color: red;
+
+.text,textarea,h1{
+    color:$secondary-color;
+    font-size: 20px;
+
+}
+@mixin borders($border: 3px ) {
+    border:3px solid yellow
+    
+}
+.btns{
+    @include borders();
+}
+.fun{
+    background-color: $secondary-color;
+    @if lightness($secondary-color)!=white{
+        color:#ffffff;
+    }
+    @else{
+        color:#ff1f17;
+    }
+
+
+}
+
+        $languages:'HTML5', 'CSS3', 'JAVA', 'React';
+        @function test1($List){
+            @return nth($List,1);
+        }
+        @function test2($List){
+            @return nth($List,length($List));
+        }
+    .languages{
+        content:test2($languages);
+    }

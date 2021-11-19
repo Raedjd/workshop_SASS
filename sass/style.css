@@ -1,0 +1,18 @@
+.text, textarea, h1 {
+  color: red;
+  font-size: 20px;
+}
+
+.btns {
+  border: 3px solid yellow;
+}
+
+.fun {
+  background-color: red;
+  color: #ffffff;
+}
+
+.languages {
+  content: "React";
+}
+/*# sourceMappingURL=style.css.map */
